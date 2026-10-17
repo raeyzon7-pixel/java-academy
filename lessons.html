@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lessons | Java Academy</title>
+<meta name="description" content="The ten Java Academy lessons for ICS3U Unit 1, by Shiv Chhabra.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="index.html"><span class="brand-mark">{ }</span><span class="brand-name">Java Academy</span></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav" class="nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="lessons.html" aria-current="page">Lessons</a>
+      <a href="practice.html">Practice</a>
+      <a href="about.html">About</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<section class="block">
+  <div class="wrap">
+    <h1>Lessons</h1>
+    <p class="section-lead">All ten lessons, in the order we did them in class.</p>
+    <div class="cards" id="lesson-cards">
+      <article class="card"><div class="num">Lesson 1</div><h3>Variables and Keyboard Input</h3><p>Store values in variables, pick the right type, and read what the user types with Scanner.</p><a class="btn secondary" href="lesson.html?id=1" aria-label="Open lesson 1: Variables and Keyboard Input">Open lesson 1</a></article>
+      <article class="card"><div class="num">Lesson 2</div><h3>Mathematical Operators</h3><p>Use + - * / %, follow BEDMAS the Java way, use shortcuts like +=, and find out why 7 / 2 is 3.</p><a class="btn secondary" href="lesson.html?id=2" aria-label="Open lesson 2: Mathematical Operators">Open lesson 2</a></article>
+      <article class="card"><div class="num">Lesson 3</div><h3>Errors and Coding Style</h3><p>Tell syntax, runtime and logic errors apart, read error messages, and write code that's easy to read.</p><a class="btn secondary" href="lesson.html?id=3" aria-label="Open lesson 3: Errors and Coding Style">Open lesson 3</a></article>
+      <article class="card"><div class="num">Lesson 4</div><h3>Statements and Expressions</h3><p>Expressions give you a value. Statements do something or decide what runs.</p><a class="btn secondary" href="lesson.html?id=4" aria-label="Open lesson 4: Statements and Expressions">Open lesson 4</a></article>
+      <article class="card"><div class="num">Lesson 5</div><h3>If/Else Statements</h3><p>Make a program decide what to do with conditions, comparison operators, and if, else if and else.</p><a class="btn secondary" href="lesson.html?id=5" aria-label="Open lesson 5: If/Else Statements">Open lesson 5</a></article>
+      <article class="card"><div class="num">Lesson 6</div><h3>Nested If Statements</h3><p>Put an if statement inside another if, for decisions that depend on an earlier one.</p><a class="btn secondary" href="lesson.html?id=6" aria-label="Open lesson 6: Nested If Statements">Open lesson 6</a></article>
+      <article class="card"><div class="num">Lesson 7</div><h3>While Loops</h3><p>Repeat code while a condition is true, trace loops with a table, and avoid infinite loops.</p><a class="btn secondary" href="lesson.html?id=7" aria-label="Open lesson 7: While Loops">Open lesson 7</a></article>
+      <article class="card"><div class="num">Lesson 8</div><h3>For Loops</h3><p>Counting loops with START, STOP, KEEP GOING, and why i &lt; 5 runs five times.</p><a class="btn secondary" href="lesson.html?id=8" aria-label="Open lesson 8: For Loops">Open lesson 8</a></article>
+      <article class="card"><div class="num">Lesson 9</div><h3>Switch Statements</h3><p>Run one block of code based on an exact value, using case, break and default.</p><a class="btn secondary" href="lesson.html?id=9" aria-label="Open lesson 9: Switch Statements">Open lesson 9</a></article>
+      <article class="card"><div class="num">Lesson 10</div><h3>Try/Catch</h3><p>Catch exceptions like bad input or dividing by zero so the program doesn't crash.</p><a class="btn secondary" href="lesson.html?id=10" aria-label="Open lesson 10: Try/Catch">Open lesson 10</a></article>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="run-in-intellij">
+  <div class="wrap narrow">
+    <h2>Running the examples in IntelliJ</h2>
+    <p>Every example here is a full program you can run. It's better to type it out than copy and paste, because you'll notice more.</p>
+    <ol class="study-steps">
+      <li>Open your project in IntelliJ, or make a new one with File &gt; New &gt; Project and pick Java.</li>
+      <li>Right-click the <code>src</code> folder, go to New &gt; Java Class, and type the class name from above the example (like <code>Greeting</code>). It has to match the name after <code>public class</code> exactly, capitals included.</li>
+      <li>Type the code. Red underlines are syntax errors. Hover over them to see what's wrong.</li>
+      <li>Click the green arrow next to <code>main</code> to run it.</li>
+      <li>If it uses Scanner, click in the Run window at the bottom, type your answer, and press Enter.</li>
+      <li>If it never stops (an infinite loop), click the red square to stop it.</li>
+    </ol>
+    <p class="muted">All the outputs on this site came from actually running the code with Java (JDK 25) using the project's test script. IntelliJ might word error messages a bit differently.</p>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div><strong>Java Academy</strong> &ndash; Your ICS3U Java Review Guide</div>
+    <div>By Shiv Chhabra</div>
+  </div>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>

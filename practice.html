@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Practice | Java Academy</title>
+<meta name="description" content="Practice questions for the ten Java Academy lessons, with explanations for every answer.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="index.html"><span class="brand-mark">{ }</span><span class="brand-name">Java Academy</span></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav" class="nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="lessons.html">Lessons</a>
+      <a href="practice.html" aria-current="page">Practice</a>
+      <a href="about.html">About</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<section class="block practice-page">
+  <div class="wrap narrow">
+    <h1>Practice</h1>
+    <p class="section-lead">Questions for all ten lessons. Some ask you to guess the output or trace a loop, some ask you to find the mistake, and some ask you to write a short program. After you answer, you'll see why the answer is right, and why yours was wrong if you missed it.</p>
+    <p class="notice"><strong>Note:</strong> I wrote these practice questions for this review site. They are not questions from the real test.</p>
+
+    <section class="reminders compact" aria-labelledby="warmup-title">
+      <p class="kicker">Warm-up: remember this from class</p>
+      <h2 id="warmup-title">Mr. Lauder's Class Reminders</h2>
+      <div class="reminder-grid">
+        <div class="reminder-card">
+          <div class="blank" data-answer="Silence" data-accept="silence">
+            <p class="blank-q">“Do not suffer in <span class="gap">______</span>.”</p>
+            <form class="blank-form"><label for="prac-blank-1">Your answer</label><input id="prac-blank-1" type="text" autocomplete="off" spellcheck="false"><button type="submit" class="btn secondary">Check</button></form>
+            <p class="blank-feedback" role="status"></p>
+            <details class="reveal"><summary>Reveal the answer</summary><div class="reveal-body">
+              <p class="blank-answer">Silence.</p>
+              <p>If a question still doesn't make sense after you read the explanation, ask someone instead of just skipping it.</p>
+            </div></details>
+          </div>
+        </div>
+        <div class="reminder-card">
+          <div class="blank" data-answer="Consistency" data-accept="consistency|consistent|beingconsistent">
+            <p class="blank-q">“The key to success is <span class="gap">______</span>.”</p>
+            <form class="blank-form"><label for="prac-blank-2">Your answer</label><input id="prac-blank-2" type="text" autocomplete="off" spellcheck="false"><button type="submit" class="btn secondary">Check</button></form>
+            <p class="blank-feedback" role="status"></p>
+            <details class="reveal"><summary>Reveal the answer</summary><div class="reveal-body">
+              <p class="blank-answer">Consistency.</p>
+              <p>Doing one lesson's questions a day and going back to the ones you got wrong works better than doing them all the night before.</p>
+            </div></details>
+          </div>
+        </div>
+        <div class="reminder-card wide">
+          <p class="blank-q">START, STOP, KEEP GOING: name the three parts of this loop and say how many times it runs.</p>
+          <div class="ssk-code small"><code>for (int i = 1; i &lt;= 3; i++)</code></div>
+          <details class="reveal"><summary>Reveal the answer</summary><div class="reveal-body">
+            <p><strong class="t-start">START:</strong> <code>int i = 1</code> &nbsp; <strong class="t-stop">STOP:</strong> <code>i &lt;= 3</code> &nbsp; <strong class="t-keep">KEEP GOING:</strong> <code>i++</code></p>
+            <p>It runs with i = 1, 2 and 3, so <strong>3 times</strong>. Once i is 4, <code>4 &lt;= 3</code> is false and it stops.</p>
+          </div></details>
+        </div>
+      </div>
+    </section>
+
+    <div id="quiz-root"></div>
+    <noscript><p class="notice">The practice questions need JavaScript turned on. You can still reveal the reminder answers above without it.</p></noscript>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div><strong>Java Academy</strong> &ndash; Your ICS3U Java Review Guide</div>
+    <div>By Shiv Chhabra</div>
+  </div>
+</footer>
+<script src="lessons-data.js"></script>
+<script src="quiz-data.js"></script>
+<script src="highlight.js"></script>
+<script src="main.js"></script>
+<script src="quiz.js"></script>
+</body>
+</html>
